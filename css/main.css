@@ -23,12 +23,23 @@ a {
   text-decoration: none;
 }
 
-/* !H E A D E R */
+.main-container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+/*         !H E A D E R          */
 /* Логотип */
+.header {
+  background-color: rgb(107, 70, 70);
+  margin-bottom: 0px;
+}
 .logo {
   font-family: 'Raleway', sans-serif;
   color: #000000;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
 }
@@ -38,10 +49,13 @@ a {
 .logo-span {
   color: var(--accent-color);
 }
-
-/* !M A I N */
 /* Навигация сайта */
-.site-nav a {
+.site-nav {
+}
+
+.nav-list {
+}
+.nav-list a {
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 14px;
@@ -63,11 +77,19 @@ a {
 .mail-tel > a:hover {
   color: var(--accent-color);
 }
+
+/*           !M A I N             */
+
 /* HERO */
 .hero {
+  height: 600px;
+  text-align: center;
   background-color: var(--accent-bg-color);
 }
 .hero-title {
+  background-color: wheat;
+  margin-top: 0;
+  padding-top: 200px;
   color: var(--main-bg-color);
   font-weight: 900;
   font-size: 44px;
@@ -76,26 +98,28 @@ a {
   text-transform: uppercase;
 }
 .hero-button {
+  width: 200px;
+  height: 50px;
   color: var(--main-bg-color);
   background-color: var(--accent-color);
-  display: flex;
-  align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
 }
 
 /* Features */
 .features {
+  background-color: violet;
+  margin: 0 auto;
 }
 .section-title {
+  margin: 0 auto;
   color: var(--title-text-color);
-  font-weight: bold;
+  font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
 }
 .section-subtitle {
   color: var(--title-text-color);
-  font-weight: bold;
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
@@ -114,7 +138,13 @@ a {
 .team {
   background-color: var(--second-bg-color);
 }
-.team .title {
+.team-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  color: var(--title-text-color);
+}
+.team {
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 16px;
@@ -149,7 +179,7 @@ a {
 /* portfolio-list */
 .portfolio-list h2 {
   color: var(--title-text-color);
-  font-weight: bold;
+  font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
@@ -159,7 +189,7 @@ a {
   line-height: 1.87;
 }
 
-/* !F o o t e r */
+/*             !F o o t e r             */
 .footer {
   background-color: var(--accent-bg-color);
 }
