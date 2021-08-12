@@ -1,0 +1,125 @@
+:root {
+  --main-text-color: #757575;
+  --accent-color: #2196f3;
+  --title-text-color: #212121;
+  --main-bg-color: #ffffff;
+  --accent-bg-color: #2f303a;
+}
+
+body {
+  background: var(--main-bg-color);
+  color: #757575;
+  font-family: Roboto;
+  font-style: normal;
+}
+
+/* Убироет точечки в списке */
+ul {
+  list-style: none;
+}
+
+/* Логотип */
+.logo {
+  color: #000000;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 31px;
+}
+.logo-footer {
+  color: var(--main-bg-color);
+}
+.logo-span {
+  color: var(--accent-color);
+}
+/* Навигация сайта */
+.site-nav a {
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+}
+.site-nav a:hover,
+.site-nav a:focus {
+  color: var(--accent-color);
+}
+.site-nav a.current {
+  color: var(--accent-color);
+}
+
+.mail-tel > a {
+  color: var(--main-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+}
+.mail-tel > a:focus,
+.mail-tel > a:hover {
+  color: var(--accent-color);
+}
+/* HERO */
+.hero {
+  background-color: var(--accent-bg-color);
+}
+.hero-title {
+  color: var(--main-bg-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 60px;
+}
+.hero-button {
+  color: var(--main-bg-color);
+  background-color: var(--accent-color);
+}
+
+/* Стили секций */
+
+.section-title {
+  color: var(--title-text-color);
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+}
+.section-subtitle {
+  color: var(--title-text-color);
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+}
+.section p {
+  color: var(--main-text-color);
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+/* Наша команда */
+.list-title {
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+}
+.list p {
+  color: var(--main-text-color);
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+}
+/* footer */
+.footer {
+  background-color: var(--accent-bg-color);
+}
+.address {
+  color: #ffffff;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+}
+.footer .link {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(255, 255, 255, 0.6);
+}
