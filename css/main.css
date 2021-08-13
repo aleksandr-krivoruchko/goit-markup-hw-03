@@ -101,27 +101,44 @@ a {
 /* HERO */
 .hero {
   height: 600px;
-  text-align: center;
   background-color: var(--accent-bg-color);
+}
+.container-hero {
+  width: 1200px;
+  height: 600px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  outline: 2px solid #499e6f;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .hero-title {
   width: 696px;
-  background-color: wheat;
-  margin-top: 0;
-  padding-top: 200px;
+  margin: 200px auto 30px auto;
   color: var(--main-bg-color);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  text-align: center;
 }
 .hero-button {
-  width: 200px;
+  min-width: 200px;
   height: 50px;
+  padding: 10px 32px;
   color: var(--main-bg-color);
   background-color: var(--accent-color);
   letter-spacing: 0.06em;
+  border: 0 solid transparent;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  text-align: center;
+}
+.hero-button:focus,
+.hero-button:hover {
 }
 
 /* Features */
