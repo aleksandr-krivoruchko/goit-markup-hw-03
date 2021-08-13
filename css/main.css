@@ -23,19 +23,22 @@ a {
   text-decoration: none;
 }
 
-.main-container {
+/*         !H E A D E R          */
+
+.header {
+}
+.container {
   width: 1200px;
+  height: 80px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+  outline: 2px solid #2196f3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-
-/*         !H E A D E R          */
-/* Логотип */
-.header {
-  background-color: rgb(107, 70, 70);
-  margin-bottom: 0px;
-}
+/* ЛОГОТИП */
 .logo {
   font-family: 'Raleway', sans-serif;
   color: #000000;
@@ -51,9 +54,18 @@ a {
 }
 /* Навигация сайта */
 .site-nav {
+  width: 531px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-
 .nav-list {
+  margin-left: auto;
+  padding-left: 0;
+  width: 294px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .nav-list a {
   color: var(--title-text-color);
@@ -65,6 +77,12 @@ a {
 .site-nav a:hover,
 .site-nav a:focus {
   color: var(--accent-color);
+}
+
+.mail-tel {
+  width: 307px;
+  display: flex;
+  justify-content: space-between;
 }
 .mail-tel > a {
   color: var(--main-text-color);
@@ -87,6 +105,7 @@ a {
   background-color: var(--accent-bg-color);
 }
 .hero-title {
+  width: 696px;
   background-color: wheat;
   margin-top: 0;
   padding-top: 200px;
