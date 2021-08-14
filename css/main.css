@@ -14,9 +14,12 @@ body {
   letter-spacing: 0.03em;
 }
 
-/* Убирает точечки в списке */
+/* Убирает точечки в списке  и вертикальные отступы*/
 ul {
   list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
 }
 /* Убирает подчеркивание ссылкам */
 a {
@@ -29,26 +32,21 @@ a {
 }
 .container {
   width: 1200px;
-  height: 80px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
   outline: 2px solid #2196f3;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 /* ЛОГОТИП */
 .logo {
+  display: inline-block;
   font-family: 'Raleway', sans-serif;
   color: #000000;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
 }
-.logo-footer {
-  color: var(--main-bg-color);
-}
+
 .logo-span {
   color: var(--accent-color);
 }
@@ -99,31 +97,23 @@ a {
 /*           !M A I N             */
 
 /* HERO */
+
 .hero {
   height: 600px;
+  text-align: center;
   background-color: var(--accent-bg-color);
 }
-.container-hero {
-  width: 1200px;
-  height: 600px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0 auto;
-  outline: 2px solid #499e6f;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+
 .hero-title {
-  width: 696px;
-  margin: 200px auto 30px auto;
+  padding-top: 205px;
+  margin-top: 0;
+  margin-bottom: 30px;
   color: var(--main-bg-color);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  text-align: center;
 }
 .hero-button {
   min-width: 200px;
@@ -135,7 +125,7 @@ a {
   border: 0 solid transparent;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  text-align: center;
+  cursor: pointer;
 }
 .hero-button:focus,
 .hero-button:hover {
@@ -143,17 +133,20 @@ a {
 
 /* Features */
 .features {
+  padding-top: 99px;
+  padding-bottom: 94px;
   background-color: violet;
-  margin: 0 auto;
 }
 .section-title {
-  margin: 0 auto;
+  margin-bottom: 50px;
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
 }
 .section-subtitle {
+  margin-top: 0;
+  margin-bottom: 10px;
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 14px;
@@ -161,6 +154,8 @@ a {
   text-transform: uppercase;
 }
 .features p {
+  margin-top: 0;
+  margin-bottom: 0;
   color: var(--main-text-color);
   font-size: 14px;
   line-height: 1.71;
@@ -168,13 +163,22 @@ a {
 
 /* Чем мы занимаемся */
 .work {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  text-align: center;
+  background-color: aquamarine;
 }
 
 /* Наша команда */
 .team {
+  padding-top: 94px;
+  padding-bottom: 50px;
+  text-align: center;
   background-color: var(--second-bg-color);
 }
 .team-title {
+  margin-top: 30px;
+  margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -187,6 +191,8 @@ a {
   line-height: 1.19;
 }
 .team p {
+  margin-top: 0;
+  margin-bottom: 0;
   color: var(--main-text-color);
   font-size: 16px;
   line-height: 1.19;
@@ -227,7 +233,14 @@ a {
 
 /*             !F o o t e r             */
 .footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: var(--accent-bg-color);
+}
+.logo-footer {
+  display: inline-block;
+  margin-bottom: 20px;
+  color: var(--main-bg-color);
 }
 .address {
   color: #ffffff;
