@@ -52,6 +52,17 @@ a {
   color: var(--accent-color);
 }
 /*                Навигация сайта                 */
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1200px;
+  height: 80px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  outline: 2px solid #91f321;
+}
 .site-nav {
   width: 531px;
   display: flex;
@@ -59,12 +70,12 @@ a {
   align-items: center;
 }
 .nav-list {
-  margin-left: auto;
-  padding-left: 0;
-  width: 294px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-left: auto;
+  padding-left: 0;
+  width: 294px;
 }
 .nav-list a {
   color: var(--title-text-color);
@@ -79,9 +90,9 @@ a {
 }
 
 .mail-tel {
-  width: 307px;
   display: flex;
   justify-content: space-between;
+  width: 307px;
 }
 .mail-tel > a {
   color: var(--main-text-color);
@@ -139,6 +150,7 @@ a {
   background-color: violet;
 }
 .section-title {
+  margin-top: 0;
   margin-bottom: 50px;
   color: var(--title-text-color);
   font-weight: 700;
@@ -153,6 +165,13 @@ a {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+}
+.features-list {
+  display: flex;
+  justify-content: space-between;
+}
+.features-list > li {
+  width: 270px;
 }
 .features p {
   margin-top: 0;
@@ -169,13 +188,21 @@ a {
   text-align: center;
   background-color: aquamarine;
 }
+.work-list {
+  display: flex;
+  justify-content: space-between;
+}
 
 /*                Наша команда                    */
 .team {
   padding-top: 94px;
-  padding-bottom: 50px;
+  padding-bottom: 94px;
   text-align: center;
   background-color: var(--second-bg-color);
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
 }
 .team-title {
   margin-top: 30px;
@@ -185,11 +212,9 @@ a {
   line-height: 1.19;
   color: var(--title-text-color);
 }
-.team {
-  color: var(--title-text-color);
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.19;
+.team-list {
+  display: flex;
+  justify-content: space-between;
 }
 .team p {
   margin-top: 0;
@@ -201,14 +226,16 @@ a {
 
 /*                  filter-list                   */
 .filter-list {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+
   padding-top: 94px;
   padding-bottom: 50px;
   background-color: cadetblue;
 }
 .filter-list-btn {
   padding: 6px 22px;
-
+  margin-right: 8px;
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 16px;
@@ -231,6 +258,11 @@ a {
   text-align: center;
   padding-bottom: 94px;
   background-color: darkkhaki;
+}
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 .portfolio h1 {
   margin: 0 auto;
