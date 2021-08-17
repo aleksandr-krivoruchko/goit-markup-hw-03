@@ -49,7 +49,6 @@ a {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  outline: 2px solid #2196f3;
 }
 
 /* .....Общий стиль секциям и заголовкам..... */
@@ -104,7 +103,6 @@ a {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  outline: 2px solid #91f321;
 }
 
 .site-nav {
@@ -231,6 +229,7 @@ a {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
+  text-align: center;
 }
 
 .team-title {
@@ -297,6 +296,7 @@ a {
 
 /*                  portfolio-list                    */
 .portfolio {
+  border-top: 1px solid #ececec;
 }
 .portfolio-list {
   display: flex;
@@ -351,6 +351,8 @@ a {
 }
 
 .footer .link {
+  display: block;
+  margin-top: 9px;
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
