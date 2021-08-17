@@ -5,6 +5,7 @@
   --main-bg-color: #ffffff;
   --second-bg-color: #f5f4fa;
   --accent-bg-color: #2f303a;
+  --card-set-gap: 30px;
 }
 
 body {
@@ -31,11 +32,18 @@ p {
   margin: 0;
 }
 
+/* ..КАРТИНКИ делаем блочными и отзывчивыми.. */
+img {
+  display: block;
+  max-width: 100%;
+}
+
 /* Убирает подчеркивание ссылкам */
 a {
   text-decoration: none;
 }
 
+/* .........КОНТЕЙНЕР........... */
 .container {
   width: 1200px;
   padding-left: 15px;
@@ -44,9 +52,27 @@ a {
   outline: 2px solid #2196f3;
 }
 
+/* .....Общий стиль секциям и заголовкам..... */
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
+}
+
+.section-title {
+  margin-bottom: 50px;
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+}
+
+.section-subtitle {
+  margin-bottom: 10px;
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
 }
 
 /*                   !H E A D E R                    */
@@ -55,7 +81,7 @@ a {
   padding: 32px 0;
 }
 
-/* ЛОГОТИП */
+/*     ЛОГОТИП     */
 .logo {
   display: inline-block;
   font-family: 'Raleway', sans-serif;
@@ -173,22 +199,6 @@ a {
 /*              Features                  */
 .features {
 }
-.section-title {
-  margin-bottom: 50px;
-  color: var(--title-text-color);
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-}
-
-.section-subtitle {
-  margin-bottom: 10px;
-  color: var(--title-text-color);
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  text-transform: uppercase;
-}
 
 .features-list {
   display: flex;
@@ -216,7 +226,6 @@ a {
 
 /*                Наша команда                    */
 .team {
-  text-align: center;
   background-color: var(--second-bg-color);
   color: var(--title-text-color);
   font-weight: 500;
@@ -225,8 +234,6 @@ a {
 }
 
 .team-title {
-  margin-top: 30px;
-  margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -235,10 +242,27 @@ a {
 
 .team-list {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-left: calc(-1 * var(--card-set-gap));
+  margin-top: calc(-1 * var(--card-set-gap));
+}
+.team-list > .item {
+  flex-basis: calc(100% / 4 - 30px);
+  margin-left: var(--card-set-gap);
+  margin-top: var(--card-set-gap);
+}
+.team-list > .item {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
-.team p {
+.team-list .item-content {
+  padding: 30px 0 30px 60px;
+}
+
+.team-list p {
+  margin-top: 10px;
   color: var(--main-text-color);
   font-size: 16px;
   line-height: 1.19;
@@ -277,17 +301,22 @@ a {
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  margin-left: calc(-1 * var(--card-set-gap));
+  margin-top: calc(-1 * var(--card-set-gap));
 }
 
-.portfolio-list > li {
-  width: 370px;
-  height: 404px;
-  margin-bottom: 30px;
+.portfolio-list > .item {
+  flex-basis: calc(100% / 3 - 30px);
+  margin-left: var(--card-set-gap);
+  margin-top: var(--card-set-gap);
+  border: 1px solid #eeeeee;
+}
+
+.portfolio-list .item-content {
+  padding: 20px 24px 20px 24px;
 }
 
 .portfolio-list h2 {
-  margin-top: 20px;
   margin-bottom: 4px;
   color: var(--title-text-color);
   font-weight: 700;
@@ -297,7 +326,6 @@ a {
 }
 
 .portfolio-list p {
-  margin-bottom: 20px;
   font-size: 16px;
   line-height: 1.87;
 }
