@@ -91,6 +91,8 @@ a {
 /*     ЛОГОТИП     */
 .logo {
   display: inline-block;
+  margin-right: 93px;
+
   font-family: 'Raleway', sans-serif;
   color: #000000;
   font-weight: 700;
@@ -103,33 +105,27 @@ a {
 }
 
 /*                Навигация сайта                 */
-.header-container {
+.main-nav {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0 auto;
+}
+.main-nav .link:hover,
+.main-nav .link:focus {
+  color: var(--accent-color);
 }
 
 .site-nav {
-  width: 531px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 
 .nav-list {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-left: auto;
-  padding-left: 0;
-  width: 294px;
 }
-
-.nav-list a {
+.nav-list > .item + .item {
+  margin-left: 50px;
+}
+.nav-list .link {
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 14px;
@@ -137,30 +133,19 @@ a {
   letter-spacing: 0.02em;
 }
 
-.site-nav a:hover,
-.site-nav a:focus {
-  color: var(--accent-color);
-}
-
 .mail-tel {
   display: flex;
-  justify-content: space-between;
-  width: 307px;
+  margin-left: auto;
 }
-
-.mail-tel > a {
+.mail-tel .link {
   color: var(--main-text-color);
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
 }
-
-.mail-tel > a:focus,
-.mail-tel > a:hover {
+.mail-tel > .link:not(:last-child) {
+  margin-right: 50px;
+}
+.current {
   color: var(--accent-color);
 }
-
 /*           !M A I N             */
 
 /*            HERO                 */
