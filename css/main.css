@@ -53,7 +53,7 @@ a {
   margin: -1px;
 }
 
-/* .........КОНТЕЙНЕР........... */
+/** .........КОНТЕЙНЕР........... */
 
 .container {
   width: 1200px;
@@ -91,7 +91,7 @@ a {
   border-bottom: 1px solid #ececec;
 }
 
-/*     .................ЛОГОТИП ................    */
+/**     .................ЛОГОТИП ................    */
 
 .logo {
   display: inline-block;
@@ -158,12 +158,13 @@ a {
   margin-right: 50px;
 }
 
-/* .nav-list.current {
+.nav-list .link.current {
   color: var(--accent-color);
-} */
+}
+
 /*           !M A I N             */
 
-/*            HERO                 */
+/**            HERO                 */
 
 .hero {
   padding-top: 200px;
